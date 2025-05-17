@@ -9,7 +9,7 @@ import Foundation
 
 ///Модель данных для дня из запроса Forecast
 struct Day: Decodable {
-    ///Темпиратура
+    ///Температура
     let avgtemp_c: Double
     ///Скорость ветра
     let maxwind_mph: Double
