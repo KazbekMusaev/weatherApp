@@ -29,7 +29,7 @@ struct Current: Decodable {
     let is_day: Int //День или ночь
     let condition: Condition
     let wind_kph: Double //Скорость ветра
-    let humidity: Int //Осадки
+    let humidity: Int //Влажность
     let cloud: Int //Облачность
     let feelslike_c: Double //Ощущается как
     let vis_km: Double //Видимость
@@ -38,4 +38,5 @@ struct Current: Decodable {
 
 struct Condition: Decodable {
     let text: String //Текст погодных условий
+    let icon: String //URL иконки
 }
