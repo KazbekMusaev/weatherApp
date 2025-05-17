@@ -12,6 +12,12 @@ struct TodayView: View {
     
     var body: some View {
         VStack(spacing: 10) {
+            Text("Погода на сегодня")
+                .font(.system(size: 23, weight: .semibold))
+                .italic()
+                .foregroundStyle(.black)
+                .shadow(radius: 10, y: 20)
+            
             AsyncImage(url: URL(string: "https:\(current.condition.icon)")) { image in
                 image.resizable()
                     .symbolRenderingMode(.multicolor)
