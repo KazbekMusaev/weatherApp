@@ -14,9 +14,12 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, dolbaebi!")
+            Text("Hello!")
         }
         .padding()
+        .onAppear {
+            viewModel.loadData()
+        }
     }
 }
 
