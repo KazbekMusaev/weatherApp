@@ -9,8 +9,6 @@ import Foundation
 
 final class NetworkManager: ObservableObject {
     
-    @Published var posts = [WeatherModel]()
-    
     func loadData(complition: @escaping (Result<WeatherModel, Error>) -> Void ) {
         var urlComponents = URLComponents()
         urlComponents.scheme = "https"
