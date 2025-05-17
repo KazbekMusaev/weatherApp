@@ -8,14 +8,23 @@
 import Foundation
 
 struct Current: Decodable {
-    let last_updated: String //Последнее обновление
-    let temp_c: Double //Темпиратура
-    let is_day: Int //День или ночь
+    ///Последнее обновление
+    let last_updated: String
+    ///Темпиратура
+    let temp_c: Double
+    ///День или ночь
+    let is_day: Int
     let condition: Condition
-    let wind_kph: Double //Скорость ветра
-    let humidity: Int //Влажность
-    let cloud: Int //Облачность
-    let feelslike_c: Double //Ощущается как
-    let vis_km: Double //Видимость
-    let gust_kph: Double //Скорость ветра
+    ///Скорость ветра
+    let wind_kph: Double
+    ///Влажность
+    let humidity: Int
+    ///Облачность
+    let cloud: Int
+    ///Ощущается как
+    let feelslike_c: Double
+    ///Видимость
+    let vis_km: Double
+    ///Скорость ветра
+    let gust_kph: Double
 }

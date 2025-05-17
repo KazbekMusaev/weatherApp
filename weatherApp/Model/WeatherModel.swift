@@ -9,8 +9,8 @@ import Foundation
 
 ///Модель для получения погоды из Api
 struct WeatherModel: Decodable {
-    let location: Location
-    let current: Current
+    var location: Location
+    var current: Current
     let forecast: Forecast
 }
 
