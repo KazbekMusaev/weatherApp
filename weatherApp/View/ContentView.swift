@@ -32,7 +32,6 @@ struct ContentView: View {
                         WeatherDayRow(day: day)
                     }
                     .listStyle(.plain)
-                    .navigationTitle("Прогноз погоды")
                 } else {
                     ProgressView("Загрузка данных...")
                 }
